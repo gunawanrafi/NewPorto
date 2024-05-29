@@ -1,0 +1,161 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* VARIABLES  */
+:root {
+    --primary-color:#f67d45;
+    --dark-color: #0F0F0F;
+    --gray-color: gray;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+
+
+
+
+}
+
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/* GLOBAL CSS */
+section {
+    padding: 70px 0;
+    
+}
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+.btn-orange {
+    background-color: #f67d45;
+    color: white;
+    
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+.text-orange {
+    color: #f67d45;
+}
+
+.text-dark {
+    color: #0F0F0F;
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+
+}
+/* CSS PER SECTION */
+
+/* Navbar Styling */
+.navbar {
+    padding: 20px 0; /* Padding atas dan bawah */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Tebal */
+    color: #333; /* Warna teks */
+}
+
+.navbar-toggler {
+    border: none; /* Hilangkan border */
+    outline: none; /* Hilangkan outline */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0,0,0,.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>'); /* Mengubah ikon burger */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333; /* Warna teks link */
+    font-weight: 500; /* Tebal */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    color: #f67d45; /* Warna teks link saat hover atau fokus */
+}
+
+/* HEADER */
+
+.header-section .header-title {
+    font-size: var(--h1-font-size);
+
+}
+.header-section .header-skill {
+    color: var(--dark-color);
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: .3s;
+}
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+
+.header-section .header-img {
+    width: 66%
+}
+
+.portofolio-section .card .card-img-top{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SKILLS */
+
+#skills {
+    background-color: #000; /* Warna hitam */
+    color: #fff; /* Warna teks putih agar kontras dengan latar belakang hitam */
+    padding: 50px 0; /* Opsional: Tambahkan padding untuk memberikan jarak di atas dan bawah */
+}
+
+.skills-section .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress {
+    background-color: var(--primary-color);
+}
+
+
+
+
